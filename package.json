@@ -2,15 +2,17 @@
   "name": "property-scraper",
   "version": "1.0.0",
   "description": "A Puppeteer-powered web scraper for realestate.com.au and domain.com.au",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "puppeteer": "^21.3.8"
+    "puppeteer": "^21.3.8",
+    "cors": "^2.8.5"
   },
   "engines": {
     "node": ">=18.0.0"
   }
 }
+
