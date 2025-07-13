@@ -2,6 +2,8 @@ const express = require("express");
 const puppeteer = require("puppeteer");
 const PORT = process.env.PORT || 3000;
 
+const app = express();  // <-- 🛠️ This was missing!
+
 app.get("/scrape", async (req, res) => {
   const targetUrl = req.query.url;
   if (!targetUrl) return res.status(400).json({ error: "Missing ?url" });
@@ -35,23 +37,4 @@ app.get("/scrape", async (req, res) => {
 
       return {
         price: getPrice(),
-        rent: getRent(),
-        state: getState(),
-        property_type: getType()
-      };
-    });
-
-    await browser.close();
-    res.json(result);
-  } catch (err) {
-    await browser.close();
-    res.status(500).json({ error: "Scraping failed", details: err.message });
-  }
-});
-
-app.get("/", (req, res) => {
-  res.send("Property Scraper is running.");
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("✅ Scraper listening on port " + PORT));
+        rent: ge
