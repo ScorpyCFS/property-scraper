@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
+echo "🏗️ Custom build script running"
 
-# Tell Render to use npm instead of bun
-echo "👷 Running custom build script: using npm install"
+# Fix Puppeteer missing Chromium
 npm install
+npx puppeteer install
