@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e  # Exit immediately if any command fails
+set -e  # Exit immediately on error
 
 echo "🏗️ Custom build script running"
 
@@ -9,5 +9,5 @@ npm install
 echo "🧠 Installing Puppeteer Chromium..."
 npx puppeteer browsers install chrome
 
-echo "✅ Puppeteer install finished. Build script done."
+echo "✅ Build script completed — exiting now"
 exit 0
