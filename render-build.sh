@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e  # Exit immediately on error
+set -e  # Exit immediately if anything fails
 
 echo "🏗️ Custom build script running"
 
