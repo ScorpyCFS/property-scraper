@@ -1,6 +1,10 @@
 #!/bin/bash
 echo "🏗️ Custom build script running"
 
-# Fix Puppeteer missing Chromium
+echo "📦 Installing dependencies..."
 npm install
+
+echo "🧠 Installing Puppeteer Chromium..."
 npx puppeteer install
+
+echo "✅ Build script completed"
