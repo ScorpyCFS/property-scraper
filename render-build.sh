@@ -1,11 +1,10 @@
 #!/bin/bash
-echo "🏗️ Skipping Puppeteer Chromium install"
-PUPPETEER_SKIP_DOWNLOAD=true npm install
+echo "🏗️ Custom build script running"
 
 echo "📦 Installing dependencies..."
 npm install
 
 echo "🧠 Installing Puppeteer Chromium..."
-npx puppeteer install
+npx puppeteer browsers install chrome
 
 echo "✅ Build script completed"
