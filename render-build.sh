@@ -7,4 +7,5 @@ npm install
 echo "🧠 Installing Puppeteer Chromium..."
 npx puppeteer browsers install chrome
 
-echo "✅ Build script completed"
+echo "✅ Build script completed — exiting cleanly"
+exit 0
