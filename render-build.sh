@@ -1,5 +1,6 @@
 #!/bin/bash
-echo "🏗️ Custom build script running"
+echo "🏗️ Skipping Puppeteer Chromium install"
+PUPPETEER_SKIP_DOWNLOAD=true npm install
 
 echo "📦 Installing dependencies..."
 npm install
